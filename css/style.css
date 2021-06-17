@@ -126,7 +126,7 @@ header img {
 .txts {
 	width: 40%;
 	text-align: left;
-	margin-left: 50%;
+	margin-left: 53%;
 }
 .concept::after {
 	content: "";
@@ -134,7 +134,7 @@ header img {
 	background: url(../img/concept.jpeg) no-repeat center;
 	background-size: cover;
 	top: 320px;
-	left: 300px;
+	left: 280px;
 	width: 500px;
 	height: 318px;
 }
@@ -245,9 +245,9 @@ dd.dd {
 /* contact */
 .contact a {
 	color: #444;
-	font-size: 40px;
+	font-size: 30px;
 	border: #FFA500 solid 5px;
-	padding: 30px 100px;
+	padding: 20px 60px;
 	transition: all .5s;
 }
 .contact a:hover {
