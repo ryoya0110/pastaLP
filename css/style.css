@@ -111,7 +111,7 @@ header img {
 }
 
 .header_bg_img {
-	background: url(/img/top.jpeg) no-repeat center;
+	background: url(../img/top.jpeg) no-repeat center;
 	background-size: cover;
 	min-height: 100vh;
 }
@@ -131,7 +131,7 @@ header img {
 .concept::after {
 	content: "";
 	position: absolute;
-	background: url(/img/concept.jpeg) no-repeat center;
+	background: url(../img/concept.jpeg) no-repeat center;
 	background-size: cover;
 	top: 320px;
 	left: 300px;
