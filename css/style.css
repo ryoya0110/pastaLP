@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+
+/* setting */
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.inner {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.section {
+	padding: 150px 0;
+	text-align: center;
+	box-shadow: 0 2px 6px gray;
+}
+.section:nth-of-type(3) {
+	box-shadow: none;
+	padding: 150px 0 50px;
+}
+.section:nth-of-type(4) {
+	box-shadow: none;
+}
+.section_title {
+	color: #333;
+	margin-bottom: 100px;
+	padding-bottom: 10px;
+	font-size: 48px;
+	border-bottom: 3px solid #DF0024;
+	display: inline-block;
+	position: relative;
+}
+.section_title::after{
+	content: "";
+	border-bottom: solid 2px #FFA500;
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	width: calc(100% - 20%);
+	height: calc(100% - 20%);
+}
+
+
+/* header */
+header {
+	height: 100px;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+}
+header .inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+.header_logo {
+	display: flex;
+	align-items: center;
+}
+.header_logo h1 {
+	font-size: 36px;
+	margin-left: 10px;
+	color: #DF0024;
+}
+.header_logo span {
+	color: #006221;
+}
+header img {
+	width: 60px;
+	border-radius: 50%;
+}
+.header_ul {
+	display: flex;
+}
+.header_ul li {
+	padding: 10px 20px;
+	border-right: #333 solid 1px;
+	transition: all .5s;
+	cursor: pointer;
+}
+.header_ul li a {
+	color: #333;
+	font-size: 20px;
+	transition: all .5s;
+	display: block;
+}
+.header_ul li:last-child {
+	border-right: none;
+}
+.header_ul li:hover {
+	background-color: #333;
+	color: #fff;
+}
+.header_ul li:hover a {
+	color: #fff;
+	border-bottom: #DF0024 solid 3px;
+	padding-bottom: 5px;
+}
+.header_ul li:nth-of-type(2):hover a {
+	border-bottom: 3px solid #006221;
+}
+.header_ul li:nth-of-type(3):hover a {
+	border-bottom: 3px solid #4682B4;
+}
+.header_ul li:nth-of-type(4):hover a {
+	border-bottom: 3px solid #FFA500;
+}
+
+.header_bg_img {
+	background: url(/img/top.jpeg) no-repeat center;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+
+/* main */
+
+/* concept */
+.concept {
+	position: relative;
+}
+.txts {
+	width: 40%;
+	text-align: left;
+	margin-left: 50%;
+}
+.concept::after {
+	content: "";
+	position: absolute;
+	background: url(/img/concept.jpeg) no-repeat center;
+	background-size: cover;
+	top: 320px;
+	left: 300px;
+	width: 500px;
+	height: 318px;
+}
+.title {
+	font-size: 24px;
+	letter-spacing: 5px;
+	color: #333;
+	margin: 30px 0 30px;
+}
+.txts p {
+	color: #444;
+	line-height: 2em;
+}
+
+/* menu */
+.menu {
+	background-color: #FFFAF0;
+}
+.menu .section_title {
+	border-bottom: 3px solid #006221;
+}
+.menu .section_title::after {
+	left: 16.5px;
+}
+.menu_body {
+	text-align: left;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.menu_content {
+	background-color: #fff;
+	padding: 50px 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 8px gray;
+	text-align: center;
+	margin-bottom: 100px;
+}
+.menu_title {
+	display: flex;
+	margin: 30px 0 30px 100px;
+	text-align: left;
+}
+.menu_title h3 {
+	font-size: 24px;
+	color: #333;
+	margin-right: 80px;
+}
+.menu_title h4 {
+	font-size: 20px;
+	color: red;
+	position: relative;
+}
+.menu_title h4::before {
+	content: "〜";
+	position: absolute;
+	left: -30px;
+}
+.menu_title h4::after {
+	content: "〜";
+	position: absolute;
+	left: 70px;
+}
+.menu_content p {
+	color: #444;
+	line-height: 1.5em;
+}
+.menu_content:nth-of-type(odd) {
+	margin-right: 100px;
+}
+.menu_content:nth-of-type(5) {
+	margin-bottom: 0;
+}
+.menu_content:nth-of-type(6) {
+	margin-bottom: 0;
+}
+
+/* news */
+.news .section_title {
+	border-bottom: 3px solid #4682B4;
+}
+.news .section_title::after {
+	left: 16.5px;
+}
+.news_body {
+	background-color: #F5F5F5;
+	padding: 100px 150px;
+}
+dl {
+	display: flex;
+	flex-wrap: wrap;
+}
+dt.dt {
+	width: 20%;
+	margin-bottom: 30px;
+	background-color: #444;
+	color: #fff;
+	padding: 30px 5%;
+}
+dd.dd {
+	width: 60%;
+	margin-bottom: 30px;
+	color: #444;
+	padding: 30px 5%;
+	background-color: #fff;
+}
+
+/* contact */
+.contact a {
+	color: #444;
+	font-size: 40px;
+	border: #FFA500 solid 5px;
+	padding: 30px 100px;
+	transition: all .5s;
+}
+.contact a:hover {
+	background-color: #444;
+	color: #fff;
+}
+
+
+/* footer */
+footer.footer {
+	background-color: #FFDEAD;
+	text-align: center;
+	margin-top: 100px;
+}
+footer p {
+	font-size: 10px;
+	padding: 30px 0;
+}
