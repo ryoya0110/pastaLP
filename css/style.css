@@ -124,7 +124,7 @@ header img {
 	position: relative;
 }
 .txts {
-	width: 40%;
+	width: 45%;
 	text-align: left;
 	margin-left: 53%;
 }
@@ -133,9 +133,9 @@ header img {
 	position: absolute;
 	background: url(../img/concept.jpeg) no-repeat center;
 	background-size: cover;
-	top: 320px;
-	left: 280px;
-	width: 500px;
+	top: 40%;
+	left: 10%;
+	width: 35%;
 	height: 318px;
 }
 .title {
